@@ -4,23 +4,28 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Multimedia</title>
+    <link rel="icon" href="multimedia/img/multi.ico">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
 </head>
 <body>
+    
     <div>
-        <h1>Todo lo relacionado a multimedia:</h1>
+        <h1 id="inicio">Todo lo relacionado a multimedia:</h1>
         <p>
-            A continuación podrás ver todo lo relacionado a multimedia en HTML, tanto imágenes como videos o audios, ya sea de forma local o remota (mediante enlaces de internet). <br>
-            <br>
+            A continuación podrás ver todo lo relacionado a multimedia en HTML, tanto imágenes como videos o audios, ya sea de forma local o remota (mediante enlaces de internet).
         </p>
     </div>
 
+    <a href="#images">Imágenes</a> <br>
+    <a href="#audios">Audios</a> <br>
+    <a href="#videos">Videos</a> <br>
+
     <div>
-        <h2>Imágenes</h2>
+        <h2 id="images">Imágenes  (<a href="#inicio">inicio</a>)</h2>
         <h4>Imágenes locales</h4>
-        <img src="multimedia/img/DTO-JCR082.jpg">
+        <img src="multimedia/img/DTO-JCR082.jpg" alt="Jonathan Cardona Ramírez">
         <img src="multimedia/img/044b8d7866d75b41464a11688951511a.jpg">
         <img src="multimedia/img/30573941.jpg">    
         <h4>Imágenes externas</h4>
@@ -29,7 +34,7 @@
     </div>
 
     <div>
-        <h2>Audios</h2>
+        <h2 id="audios">Audios (<a href="#inicio">inicio</a>)</h2>
         <h4>Back in black - AC/DC</h4>
         <audio controls src="multimedia/audio/AC_DC Back In Black (Studio Version).m4a"></audio>
         <h4>Don't cry - Guns and Roses</h4>
@@ -37,7 +42,7 @@
     </div>
 
     <div>
-        <h2>Videos</h2>
+        <h2 id="videos">Videos (<a href="#inicio">inicio</a>)</h2>
         <h4>Videos locales</h4>
         <video controls src="multimedia/video/When Steve isn't Online (60fps Minecraft Animation).mp4"></video>
         <h4>Videos Externos</h4>
