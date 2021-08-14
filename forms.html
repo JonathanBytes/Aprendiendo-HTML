@@ -6,6 +6,28 @@
     <title>Textos ordenados</title>
 </head>
 <body>
+    <!-- input type:
+    button -> Visualmente es igual, pero el formulario no se enviará
+    submit -> Se utiliza para enviar el formulario
+    date: -> Se utiliza para introducir una fecha
+    datetime -> Obsoleto
+    datetime-local -> fecha y hora, no funciona en firefox
+    time -> Se utiliza para introducir una hora
+        TIP
+            *Se recomienda usar datetime y time para seleccionar fecha y hora
+            hidden -> Campo oculto, puede contener valor pero no se mostrará
+    month -> Se utiliza para introducir un mes
+    week -> Se utiliza pra introducir el número de semana del año
+    search -> Se utiliza para las barras de búsqueda
+    tel -> Se utiliza para introducir números telefónicos
+    email -> Se utiliza para introducir un email
+    password -> Se utiliza para contraseñas
+    url -> Se utiliza para introducir URLs
+    color: -> Se utiliza para especificar un color
+    number -> Se utiliza para valores numéricos
+    range -> Se utiliza para establecer un rango
+    reset -> Se utiliza para resetear el formulario
+    text -> Valor por defecto -->
     <header>
         <nav>
             <ul>
@@ -15,12 +37,44 @@
         </nav>        
     </header>
     <main>
+        <h1>Formularios</h1>
         <form>
-            <label for="name" title="El pepe alonso">Nombre</label>
+            <h2>Registro</h2>
+            <label for="name" title="Nombre">Nombre</label>
             <input title="Ingrese aquí su nombre completo" id="name">
             <input type="submit" title="Botón enviar con input">
             <button title="Enviar con button">Enviar</button>
         </form>
+        <form>
+            <h2>Selección única</h2>
+            <h3>Género:</h3>
+            <label for="male">Masculino</label>
+            <input type="radio" name="gender" id="male" value="male">
+
+            <label for="female">Femenino</label>
+            <input type="radio" name="gender" id="female" value="female">
+
+            <label for="other">Otro</label>
+            <input type="radio" name="gender" id="other" value="other">
+
+            <button title="Enviar con button">Enviar</button>
+        </form>
+        <form>
+            <h2>Selección múltiple</h2>
+            <h3>Hobbies:</h3>
+            <label for="draw">Dibujar</label>
+            <input type="checkbox" name="hobbies" id="draw" value="draw">
+
+            <label for="sing">Cantar</label>
+            <input type="checkbox" name="hobbies" id="sing" value="sing">
+
+            <label for="other">Otro</label>
+            <input title="Escribe aquí otros hobbies" type="text" name="hobbies" id="other">
+
+            <input type="reset" title="Restablecer">
+            <button title="Enviar con button">Enviar</button>
+        </form>
+
     </main>
     <footer>
         <a href="index.html">Volver</a>
