@@ -8,6 +8,70 @@
     <title>Tables</title>
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <table>
+            <colgroup>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col>
+            </colgroup>
+            <caption>Horario de clases</caption>
+            <thead>
+                <tr>
+                    <td></td>
+                    <td>L</td>
+                    <td>M</td>
+                    <td>X</td>
+                    <td>J</td>
+                    <td>V</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>8:30 - 9:30</td>
+                    <td>Matemáticas</td>
+                    <td>Matemáticas</td>
+                    <td>Sociales</td>
+                    <td>Matemáticas</td>
+                    <td>Matemáticas</td>
+                </tr>
+                <tr>
+                    <td>9:30 - 10:25</td>
+                    <td>Lengua</td>
+                    <td>Lengua</td>
+                    <td>Matemáticas</td>
+                    <td>Ciencias</td>
+                    <td>Lengua</td>
+                </tr>
+                <tr>
+                    <td>10:25 - 11:00</td>
+                    <td colspan="5" rowspan="2"><center>Recreo</center></td> <!-- Center no se debe usar en HTML, es para el ejemplo -->
+                </tr>   
+                <tr>
+                    <td>a</td>
+                </tr>     
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Horas de clase: 2</td>
+                    <td>2 asignaturas</td>
+                    <td>2 asignaturas</td>
+                    <td>2 asignaturas</td>
+                    <td>2 asignaturas</td>
+                    <td>2 asignaturas</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
 </body>
 </html>
