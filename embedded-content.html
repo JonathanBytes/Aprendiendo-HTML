@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <link rel="icon" href="assets/img/multi.ico">
     <title>Contenido embebido</title>
+    <style>
+        img{
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -15,14 +20,49 @@
         </nav>
     </header>
     <main>
+        <h1 id="home">Contenido embebido</h1>
+        <nav>
+            <ul>
+                <li><a href="#images">Imágenes</a></li>
+                <li><a href="#audios">Audios</a></li>
+                <li><a href="#videos">Videos</a></li>
+            </ul>
+        </nav>
+        <h2 id="images">Imágenes <a href="#home">(subir)</a></h2>
+        <h3>Misc</h3>
+        <img src="assets/img/social-media.svg" alt="Social media">
+        <img srcset="assets/img/fox-forest.webp 2x, assets/img/fox-forest-mobile.webp 3x" alt="Fox on a forest"> <!-- Imágen adaptada para que se carge de menor resolución en dispositivos con pixelRatio mayor a 2 -->
+        <picture>
+            <source srcset="assets/img/grand-tour-mobile.webp, assets/img/grand-tour.webp" media="(max-width:750px)">
+            <img src="assets/img/grand-tour.webp" alt="Space propaganda">
+        </picture>
+        <h3>Desarrollador</h3>
+        <picture>
+            <source src="assets/img/foto-jonathan.webp">
+            <img src="assets/img/foto-jonathan.png" alt="Jonathan Cardona Ramírez">
+            <source src="assets/img/jonathan-doc.webp">
+            <img src="assets/img/jonathan-doc.jpg" alt="Jonathan Cardona Ramírez">
+        </picture>
+        <picture>
+            <source src="assets/img/jonathan-bw.jpg">
+            <img src="assets/img/jonathan-bw.jpg" alt="Jonathan Cardona Ramírez">
+        </picture>
+        <picture>
+            <source src="assets/img/jonathan-telescope.png">
+            <img src="assets/img/jonathan-telescope.png" alt="Jonathan Cardona Ramírez">
+        </picture>
+        <h2 id="audios">Audios <a href="#home">(subir)</a></h2>
+
+        <h2 id="videos">Videos <a href="#home">(subir)</a></h2>
 
     </main>
     <footer>
-        <a href="index.html">Volver</a>
+        <a href="index.html">Volver</a> <br>
         Aprendiendo endo - 2021
         <ul>
             <li><a href="https://www.youtube.com/channel/UCWrCVTrbVqrTvWmbiAfa-7g">YouTube</a></li>
             <li><a href="https://github.com/JonathanCard10/Aprendiendo-HTML">Repositorio GitHub</a></li>
+            <li>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></li>
         </ul>
     </footer>
 </body>
