@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="assets/img/multi.ico">
+    <title>Imágenes</title>
+    <style>
+        img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="embedded-content.html">Inicio</a></li>
+                <li><a href="https://github.com/JonathanCard10/Aprendiendo-HTML">Repositorio GitHub</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 id="images">Imágenes</h2>
+        <h3>Misc</h3>
+        <img src="assets/img/social-media.svg" alt="Social media" title="By Freepik">
+        <img srcset="assets/img/fox-forest.webp 2x, assets/img/fox-forest-mobile.webp 3x" alt="Fox on a forest"> <!-- Imágen adaptada para que se carge de menor resolución en dispositivos con pixelRatio mayor a 2 -->
+        <picture>
+            <source srcset="assets/img/grand-tour-mobile.webp" media="(max-width:750px)">
+            <img src="assets/img/grand-tour.webp" alt="Space propaganda">
+        </picture>
+        <h3>Desarrollador</h3>
+        <picture>
+            <source src="assets/img/foto-jonathan.webp">
+            <img src="assets/img/foto-jonathan.png" alt="Jonathan Cardona Ramírez">
+            <source src="assets/img/jonathan-doc.webp">
+            <img src="assets/img/jonathan-doc.jpg" alt="Jonathan Cardona Ramírez">
+        </picture>
+        <picture>
+            <source src="assets/img/jonathan-bw.jpg">
+            <img src="assets/img/jonathan-bw.jpg" alt="Jonathan Cardona Ramírez">
+        </picture>
+        <picture>
+            <source src="assets/img/jonathan-telescope.png">
+            <img src="assets/img/jonathan-telescope.png" alt="Jonathan Cardona Ramírez">
+        </picture>
+        <a href="#images">Subir</a>
+    </main>
+    <footer>
+        <a href="embedded-content.html">Volver</a> <br>
+        Aprendiendo endo - 2021
+        <ul>
+            <li><a href="https://www.youtube.com/channel/UCWrCVTrbVqrTvWmbiAfa-7g">YouTube</a></li>
+            <li><a href="https://github.com/JonathanCard10/Aprendiendo-HTML">Repositorio GitHub</a></li>
+            <li>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
